@@ -10,7 +10,7 @@
 </head>
 <body>
     <div th:replace="~{fragments/navdar.html :: navbar}"></div>
-
+    <div th:if="${msg != null}" th:text="${msg}" class="alert alert-success" role="alert"></div>
     <div class="container px-4 pb-5">
         <h1 class="pb-2 border-bottom">Lista Peliculas</h1>
         <a class="btn btn-primary mt-4 mb-4" th:href="@{'/peliculas/new'}">Nueva Pelicula</a>
@@ -32,10 +32,10 @@
                 <td th:text="${pelicula.fechaEstreno}"></td>
                 <td th:text="${pelicula.duracionMinutos}"></td>
                 <td><a class="btn btn-primary"
-                       th:href="@{'/pelicula/edit' + '?id=' + ${pelicula.id}}">Editar</a>
+                       th:href="@{'/peliculazzz/edit' + '?id=' + ${pelicula.id}}">Editar</a>
                 </td>
                 <td><a class="btn btn-danger"
-                       th:href="@{'/pelicula/delete' + '?id=' + ${pelicula.id}}">Borrar</a>
+                       th:href="@{'/peliculazzz/deletePelicula' + '?id=' + ${pelicula.id}}">Borrar</a>
                 </td>
             </tr>
             </tbody>

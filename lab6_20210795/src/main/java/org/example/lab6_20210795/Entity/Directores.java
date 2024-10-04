@@ -6,7 +6,7 @@ import lombok.Setter;
 
 import java.util.Date;
 
-@Entity(name="peliculas")
+@Entity(name="directores")
 @Getter
 @Setter
 public class Directores {
